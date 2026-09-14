@@ -1,0 +1,731 @@
+.page {
+  --pink: #e9737c;
+  --pink-light: #ed7f87;
+  --cream: #f8ebcc;
+
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  overflow-x: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 13%,
+      rgba(255, 255, 255, 0.05),
+      transparent 31%
+    ),
+    linear-gradient(
+      180deg,
+      var(--pink-light) 0%,
+      var(--pink) 100%
+    );
+
+  color: var(--cream);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+/* --------------------------------
+   BACKGROUND DETAILS
+-------------------------------- */
+
+.backgroundGlowOne,
+.backgroundGlowTwo {
+  position: absolute;
+
+  pointer-events: none;
+
+  border-radius: 999px;
+
+  filter: blur(80px);
+
+  opacity: 0.12;
+}
+
+.backgroundGlowOne {
+  width: 380px;
+  height: 380px;
+
+  top: -150px;
+  right: -160px;
+
+  background: #ffffff;
+}
+
+.backgroundGlowTwo {
+  width: 300px;
+  height: 300px;
+
+  bottom: 80px;
+  left: -170px;
+
+  background: #ffffff;
+}
+
+/* --------------------------------
+   LOCATION
+-------------------------------- */
+
+.location {
+  position: relative;
+  z-index: 2;
+
+  width: min(1180px, calc(100% - 72px));
+
+  margin: 0 auto;
+
+  padding-top: 54px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  letter-spacing: 0.32em;
+
+  color: var(--cream);
+}
+
+.location span {
+  margin: 0 4px;
+}
+
+/* --------------------------------
+   MAIN CONTENT
+-------------------------------- */
+
+.content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: min(920px, calc(100% - 40px));
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+/* --------------------------------
+   VIBA LOGO
+
+   IMPORTANT:
+   THERE IS ABSOLUTELY NO CIRCLE,
+   BORDER, OUTLINE OR PSEUDO ELEMENT.
+-------------------------------- */
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  margin: 55px auto 42px;
+
+  padding: 0;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  border-radius: 0;
+}
+
+.logoSection::before,
+.logoSection::after {
+  display: none !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  content: none !important;
+
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+.logo {
+  display: block;
+
+  width: 215px;
+  height: auto;
+
+  max-width: 60vw;
+
+  margin: 0 auto;
+
+  padding: 0;
+
+  object-fit: contain;
+
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+
+  background: transparent !important;
+
+  border-radius: 0 !important;
+}
+
+/* --------------------------------
+   INTRO
+-------------------------------- */
+
+.eyebrow {
+  margin: 0 0 28px;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  line-height: 1.6;
+
+  letter-spacing: 0.31em;
+
+  color: var(--cream);
+}
+
+/* --------------------------------
+   HERO TITLE
+-------------------------------- */
+
+.heading {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(64px, 9vw, 118px);
+
+  font-weight: 400;
+
+  line-height: 0.82;
+
+  letter-spacing: -0.055em;
+
+  color: var(--cream);
+}
+
+.italic {
+  display: block;
+
+  margin: 5px 0 6px;
+
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* --------------------------------
+   DESCRIPTION
+-------------------------------- */
+
+.description {
+  max-width: 700px;
+
+  margin: 45px auto 0;
+
+  font-size: 20px;
+  font-weight: 300;
+
+  line-height: 1.75;
+
+  letter-spacing: 0.01em;
+
+  color: var(--cream);
+}
+
+/* --------------------------------
+   DIVIDER
+-------------------------------- */
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+
+  width: 100%;
+
+  margin: 43px 0 32px;
+}
+
+.line {
+  display: block;
+
+  width: 100px;
+  height: 1px;
+
+  background: rgba(248, 235, 204, 0.8);
+}
+
+.heart {
+  font-family: Georgia, serif;
+
+  font-size: 27px;
+  line-height: 1;
+
+  color: var(--cream);
+}
+
+/* --------------------------------
+   TAGLINE
+-------------------------------- */
+
+.tagline {
+  margin: 0;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  line-height: 1.7;
+
+  letter-spacing: 0.3em;
+
+  color: var(--cream);
+}
+
+/* --------------------------------
+   CATEGORY PILLS
+-------------------------------- */
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-top: 37px;
+}
+
+.categories span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 50px;
+
+  padding: 0 25px;
+
+  border: 1px solid rgba(248, 235, 204, 0.82);
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  letter-spacing: 0.2em;
+
+  white-space: nowrap;
+
+  color: var(--cream);
+}
+
+/* --------------------------------
+   STORE ILLUSTRATION
+-------------------------------- */
+
+.storeScene {
+  width: min(800px, 100%);
+
+  margin: 46px auto 0;
+}
+
+.storeSvg {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  overflow: visible;
+
+  fill: none;
+
+  stroke: var(--cream);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  opacity: 0.9;
+}
+
+.storeSvg text {
+  fill: var(--cream);
+
+  stroke: none;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 14px;
+}
+
+.storeSvg .handwriting {
+  font-style: italic;
+  font-size: 19px;
+}
+
+/* --------------------------------
+   FOOTER
+-------------------------------- */
+
+.footerText {
+  margin: 20px 0 0;
+
+  font-size: 10px;
+  letter-spacing: 0.32em;
+
+  color: rgba(248, 235, 204, 0.82);
+}
+
+.bottomSpacer {
+  height: 45px;
+}
+
+/* ============================================================
+   TABLET
+============================================================ */
+
+@media (max-width: 768px) {
+  .location {
+    width: calc(100% - 48px);
+
+    padding-top: 38px;
+
+    font-size: 12px;
+
+    letter-spacing: 0.28em;
+  }
+
+  .content {
+    width: calc(100% - 36px);
+  }
+
+  /*
+    MOBILE LOGO
+    NO CIRCLE.
+    NO RING.
+    NO BORDER.
+  */
+
+  .logoSection {
+    width: 100%;
+    height: auto;
+
+    margin: 43px auto 37px;
+
+    padding: 0;
+
+    border: none !important;
+    outline: none !important;
+
+    background: transparent !important;
+
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .logoSection::before,
+  .logoSection::after {
+    display: none !important;
+
+    content: none !important;
+
+    border: none !important;
+    outline: none !important;
+  }
+
+  .logo {
+    width: 190px;
+
+    max-width: 53vw;
+
+    border: none !important;
+    outline: none !important;
+
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+
+    background: transparent !important;
+  }
+
+  .eyebrow {
+    margin-bottom: 27px;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+
+    letter-spacing: 0.27em;
+  }
+
+  .heading {
+    font-size: clamp(53px, 15vw, 78px);
+
+    line-height: 0.85;
+  }
+
+  .description {
+    max-width: 570px;
+
+    margin-top: 36px;
+
+    padding: 0 10px;
+
+    font-size: 17px;
+
+    line-height: 1.65;
+  }
+
+  .divider {
+    margin: 37px 0 29px;
+
+    gap: 15px;
+  }
+
+  .line {
+    width: 73px;
+  }
+
+  .heart {
+    font-size: 24px;
+  }
+
+  .tagline {
+    font-size: 10px;
+
+    line-height: 1.8;
+
+    letter-spacing: 0.27em;
+  }
+
+  .categories {
+    gap: 9px;
+
+    margin-top: 31px;
+  }
+
+  .categories span {
+    min-height: 44px;
+
+    padding: 0 19px;
+
+    font-size: 10px;
+
+    letter-spacing: 0.15em;
+  }
+
+  .storeScene {
+    margin-top: 37px;
+  }
+
+  .footerText {
+    margin-top: 17px;
+
+    font-size: 8px;
+
+    letter-spacing: 0.27em;
+  }
+}
+
+/* ============================================================
+   SMALL MOBILE
+============================================================ */
+
+@media (max-width: 480px) {
+  .location {
+    width: calc(100% - 42px);
+
+    padding-top: 31px;
+
+    font-size: 10px;
+
+    letter-spacing: 0.27em;
+  }
+
+  .content {
+    width: calc(100% - 30px);
+  }
+
+  /*
+    CRITICAL MOBILE LOGO FIX:
+    NOTHING SURROUNDS THE LOGO.
+  */
+
+  .logoSection {
+    display: flex;
+
+    width: 100% !important;
+    height: auto !important;
+
+    margin: 36px auto 33px !important;
+
+    padding: 0 !important;
+
+    border: 0 !important;
+    outline: 0 !important;
+
+    background: none !important;
+
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+  }
+
+  .logoSection::before,
+  .logoSection::after {
+    display: none !important;
+
+    content: none !important;
+  }
+
+  .logo {
+    width: 175px;
+
+    max-width: 56vw;
+
+    margin: 0 auto;
+
+    border: 0 !important;
+    outline: 0 !important;
+
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+
+    background: transparent !important;
+  }
+
+  .eyebrow {
+    max-width: 350px;
+
+    margin-bottom: 23px;
+
+    font-size: 9px;
+
+    letter-spacing: 0.25em;
+  }
+
+  .heading {
+    font-size: clamp(49px, 15.3vw, 68px);
+
+    line-height: 0.84;
+
+    letter-spacing: -0.058em;
+  }
+
+  .italic {
+    margin: 5px 0 7px;
+  }
+
+  .description {
+    max-width: 360px;
+
+    margin-top: 30px;
+
+    padding: 0 5px;
+
+    font-size: 15px;
+
+    line-height: 1.68;
+  }
+
+  .divider {
+    margin-top: 31px;
+    margin-bottom: 25px;
+  }
+
+  .line {
+    width: 62px;
+  }
+
+  .heart {
+    font-size: 22px;
+  }
+
+  .tagline {
+    font-size: 9px;
+
+    line-height: 1.85;
+
+    letter-spacing: 0.25em;
+  }
+
+  .categories {
+    gap: 7px;
+
+    width: 100%;
+
+    margin-top: 27px;
+  }
+
+  .categories span {
+    min-height: 40px;
+
+    padding: 0 15px;
+
+    font-size: 8.5px;
+
+    letter-spacing: 0.13em;
+  }
+
+  .storeScene {
+    width: 110%;
+
+    margin-top: 33px;
+
+    transform: translateX(0);
+  }
+
+  .storeSvg {
+    stroke-width: 1.4;
+  }
+
+  .footerText {
+    margin-top: 13px;
+
+    font-size: 7px;
+  }
+
+  .bottomSpacer {
+    height: 28px;
+  }
+}
+
+/* ============================================================
+   VERY SMALL PHONES
+============================================================ */
+
+@media (max-width: 370px) {
+  .logo {
+    width: 158px;
+  }
+
+  .heading {
+    font-size: 48px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .categories span {
+    padding: 0 12px;
+
+    font-size: 8px;
+  }
+}
