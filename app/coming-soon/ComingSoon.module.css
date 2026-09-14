@@ -16,15 +16,21 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* LOCATION */
+
+/* =========================================================
+   LOCATION
+========================================================= */
 
 .location {
   width: min(1280px, calc(100% - 76px));
+
   margin: 0 auto;
+
   padding-top: 32px;
 
   font-size: 14px;
   font-weight: 500;
+
   letter-spacing: 0.34em;
 
   color: var(--cream);
@@ -34,7 +40,10 @@
   margin: 0 5px;
 }
 
-/* MAIN */
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
 
 .content {
   display: flex;
@@ -48,53 +57,70 @@
   text-align: center;
 }
 
-/* LOGO */
+
+/* =========================================================
+   VIBA LOGO
+========================================================= */
 
 .logoSection {
   display: flex;
+
   justify-content: center;
   align-items: center;
 
   width: 100%;
 
-  margin: 12px auto 22px;
+  margin: 5px auto 16px;
+
   padding: 0;
 
   border: none;
   outline: none;
 
   background: transparent;
+
   box-shadow: none;
 }
 
 .logoSection::before,
 .logoSection::after {
   display: none !important;
+
   content: none !important;
 
   border: none !important;
+
   outline: none !important;
 
   background: none !important;
+
+  box-shadow: none !important;
 }
 
-/* FINAL DESKTOP LOGO SIZE */
+
+/* =========================================================
+   DESKTOP LOGO
+   20%+ LARGER
+========================================================= */
 
 .logo {
   display: block;
 
-  width: 380px;
-  height: 380px;
+  width: 456px;
+  height: 456px;
 
-  max-width: 72vw;
+  max-width: 76vw;
 
   margin: 0 auto;
+
   padding: 0;
 
   object-fit: cover;
 
   border: none !important;
+
   outline: none !important;
+
   border-radius: 0 !important;
 
   box-shadow: none !important;
@@ -102,12 +128,16 @@
   background: transparent !important;
 }
 
-/* EYEBROW */
+
+/* =========================================================
+   EYEBROW
+========================================================= */
 
 .eyebrow {
   margin: 0 0 28px;
 
   font-size: 13px;
+
   font-weight: 500;
 
   line-height: 1.6;
@@ -117,18 +147,27 @@
   color: var(--cream);
 }
 
-/* HEADING */
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
 
 .heading {
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
 
   margin: 0;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
 
   font-size: clamp(66px, 8.5vw, 118px);
+
   font-weight: 400;
 
   line-height: 0.83;
@@ -146,10 +185,14 @@
   margin: 4px 0 8px;
 
   font-style: italic;
+
   font-weight: 400;
 }
 
-/* DESCRIPTION */
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
 
 .description {
   max-width: 760px;
@@ -157,6 +200,7 @@
   margin: 43px auto 0;
 
   font-size: 19px;
+
   font-weight: 300;
 
   line-height: 1.75;
@@ -166,11 +210,16 @@
   color: var(--cream);
 }
 
-/* DIVIDER */
+
+/* =========================================================
+   DIVIDER
+========================================================= */
 
 .divider {
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
   gap: 20px;
@@ -184,13 +233,17 @@
   display: block;
 
   width: 100px;
+
   height: 1px;
 
   background: rgba(249, 232, 199, 0.84);
 }
 
 .heart {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
 
   font-size: 26px;
 
@@ -199,12 +252,16 @@
   color: var(--cream);
 }
 
-/* TAGLINE */
+
+/* =========================================================
+   TAGLINE
+========================================================= */
 
 .tagline {
   margin: 0;
 
   font-size: 12px;
+
   font-weight: 500;
 
   line-height: 1.8;
@@ -214,13 +271,18 @@
   color: var(--cream);
 }
 
-/* CATEGORY PILLS */
+
+/* =========================================================
+   CATEGORY PILLS
+========================================================= */
 
 .categories {
   display: flex;
+
   flex-wrap: wrap;
 
   align-items: center;
+
   justify-content: center;
 
   gap: 12px;
@@ -230,7 +292,9 @@
 
 .categories span {
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
   min-height: 48px;
@@ -238,9 +302,11 @@
   padding: 0 25px;
 
   border: 1px solid rgba(249, 232, 199, 0.85);
+
   border-radius: 999px;
 
   font-size: 11px;
+
   font-weight: 400;
 
   letter-spacing: 0.2em;
@@ -250,7 +316,10 @@
   color: var(--cream);
 }
 
-/* STORE */
+
+/* =========================================================
+   STORE ILLUSTRATION
+========================================================= */
 
 .storeScene {
   width: min(800px, 100%);
@@ -262,6 +331,7 @@
   display: block;
 
   width: 100%;
+
   height: auto;
 
   overflow: visible;
@@ -271,7 +341,9 @@
   stroke: var(--cream);
 
   stroke-width: 1.5;
+
   stroke-linecap: round;
+
   stroke-linejoin: round;
 
   opacity: 0.9;
@@ -282,7 +354,10 @@
 
   stroke: none;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
 
   font-size: 14px;
 }
@@ -293,12 +368,16 @@
   font-style: italic;
 }
 
-/* FOOTER */
+
+/* =========================================================
+   FOOTER
+========================================================= */
 
 .footerText {
   margin: 16px 0 0;
 
   font-size: 9px;
+
   font-weight: 400;
 
   letter-spacing: 0.32em;
@@ -310,9 +389,13 @@
   height: 45px;
 }
 
-/* TABLET */
+
+/* =========================================================
+   TABLET
+========================================================= */
 
 @media (max-width: 768px) {
+
   .location {
     width: calc(100% - 48px);
 
@@ -327,18 +410,23 @@
     width: calc(100% - 34px);
   }
 
+
+  /* TABLET LOGO */
+
   .logoSection {
-    margin: 10px auto 20px;
+    margin: 4px auto 17px;
   }
 
   .logo {
-    width: 310px;
-    height: 310px;
+    width: 372px;
 
-    max-width: 72vw;
+    height: 372px;
+
+    max-width: 76vw;
 
     object-fit: cover;
   }
+
 
   .eyebrow {
     margin-bottom: 24px;
@@ -411,9 +499,13 @@
   }
 }
 
-/* MOBILE */
+
+/* =========================================================
+   MOBILE
+========================================================= */
 
 @media (max-width: 480px) {
+
   .location {
     width: calc(100% - 38px);
 
@@ -428,26 +520,33 @@
     width: calc(100% - 28px);
   }
 
+
+  /* MOBILE LOGO - LARGE AND PROMINENT */
+
   .logoSection {
-    margin: 7px auto 17px;
+    margin: 2px auto 15px;
   }
 
   .logo {
-    width: 260px;
-    height: 260px;
+    width: 312px;
 
-    max-width: 72vw;
+    height: 312px;
+
+    max-width: 78vw;
 
     object-fit: cover;
 
     margin: 0 auto;
 
     border: none !important;
+
     outline: none !important;
+
     border-radius: 0 !important;
 
     box-shadow: none !important;
   }
+
 
   .eyebrow {
     max-width: 350px;
@@ -550,14 +649,19 @@
   }
 }
 
-/* VERY SMALL PHONES */
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
 
 @media (max-width: 370px) {
-  .logo {
-    width: 230px;
-    height: 230px;
 
-    max-width: 72vw;
+  .logo {
+    width: 276px;
+
+    height: 276px;
+
+    max-width: 78vw;
   }
 
   .heading {
