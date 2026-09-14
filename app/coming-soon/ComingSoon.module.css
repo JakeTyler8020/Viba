@@ -5,29 +5,26 @@
   width: 100%;
   min-height: 100svh;
 
+  margin: 0;
+  padding: 0;
+
   overflow-x: hidden;
 
   background: var(--pink);
-
   color: var(--cream);
 
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ================================
-   LOCATION
-================================ */
+/* LOCATION */
 
 .location {
   width: min(1280px, calc(100% - 76px));
-
   margin: 0 auto;
-
-  padding-top: 35px;
+  padding-top: 32px;
 
   font-size: 14px;
   font-weight: 500;
-
   letter-spacing: 0.34em;
 
   color: var(--cream);
@@ -37,25 +34,21 @@
   margin: 0 5px;
 }
 
-/* ================================
-   MAIN CONTENT
-================================ */
+/* MAIN */
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  width: min(950px, calc(100% - 40px));
+  width: min(980px, calc(100% - 40px));
 
   margin: 0 auto;
 
   text-align: center;
 }
 
-/* ================================
-   LOGO
-================================ */
+/* LOGO */
 
 .logoSection {
   display: flex;
@@ -64,24 +57,28 @@
 
   width: 100%;
 
-  margin: 24px auto 26px;
-
+  margin: 12px auto 22px;
   padding: 0;
 
   border: none;
   outline: none;
 
   background: transparent;
-
   box-shadow: none;
 }
 
 .logoSection::before,
 .logoSection::after {
   display: none !important;
-
   content: none !important;
+
+  border: none !important;
+  outline: none !important;
+
+  background: none !important;
 }
+
+/* FINAL DESKTOP LOGO SIZE */
 
 .logo {
   display: block;
@@ -92,22 +89,20 @@
   max-width: 72vw;
 
   margin: 0 auto;
+  padding: 0;
 
   object-fit: cover;
 
   border: none !important;
   outline: none !important;
-
   border-radius: 0 !important;
 
   box-shadow: none !important;
 
-  background: transparent;
+  background: transparent !important;
 }
 
-/* ================================
-   EYEBROW
-================================ */
+/* EYEBROW */
 
 .eyebrow {
   margin: 0 0 28px;
@@ -122,9 +117,7 @@
   color: var(--cream);
 }
 
-/* ================================
-   TITLE
-================================ */
+/* HEADING */
 
 .heading {
   display: flex;
@@ -136,7 +129,6 @@
   font-family: Georgia, "Times New Roman", serif;
 
   font-size: clamp(66px, 8.5vw, 118px);
-
   font-weight: 400;
 
   line-height: 0.83;
@@ -154,18 +146,15 @@
   margin: 4px 0 8px;
 
   font-style: italic;
-
   font-weight: 400;
 }
 
-/* ================================
-   DESCRIPTION
-================================ */
+/* DESCRIPTION */
 
 .description {
   max-width: 760px;
 
-  margin: 44px auto 0;
+  margin: 43px auto 0;
 
   font-size: 19px;
   font-weight: 300;
@@ -177,9 +166,7 @@
   color: var(--cream);
 }
 
-/* ================================
-   DIVIDER
-================================ */
+/* DIVIDER */
 
 .divider {
   display: flex;
@@ -190,18 +177,20 @@
 
   width: 100%;
 
-  margin: 42px 0 30px;
+  margin: 40px 0 29px;
 }
 
 .line {
+  display: block;
+
   width: 100px;
   height: 1px;
 
-  background: rgba(249, 232, 199, 0.82);
+  background: rgba(249, 232, 199, 0.84);
 }
 
 .heart {
-  font-family: Georgia, serif;
+  font-family: Georgia, "Times New Roman", serif;
 
   font-size: 26px;
 
@@ -210,9 +199,7 @@
   color: var(--cream);
 }
 
-/* ================================
-   TAGLINE
-================================ */
+/* TAGLINE */
 
 .tagline {
   margin: 0;
@@ -227,37 +214,34 @@
   color: var(--cream);
 }
 
-/* ================================
-   CATEGORY PILLS
-================================ */
+/* CATEGORY PILLS */
 
 .categories {
   display: flex;
   flex-wrap: wrap;
 
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   gap: 12px;
 
-  margin-top: 36px;
+  margin-top: 34px;
 }
 
 .categories span {
   display: flex;
-
   align-items: center;
   justify-content: center;
 
-  min-height: 50px;
+  min-height: 48px;
 
   padding: 0 25px;
 
-  border: 1px solid rgba(249, 232, 199, 0.84);
-
+  border: 1px solid rgba(249, 232, 199, 0.85);
   border-radius: 999px;
 
   font-size: 11px;
+  font-weight: 400;
 
   letter-spacing: 0.2em;
 
@@ -266,14 +250,12 @@
   color: var(--cream);
 }
 
-/* ================================
-   STORE ILLUSTRATION
-================================ */
+/* STORE */
 
 .storeScene {
   width: min(800px, 100%);
 
-  margin: 48px auto 0;
+  margin: 43px auto 0;
 }
 
 .storeSvg {
@@ -282,14 +264,14 @@
   width: 100%;
   height: auto;
 
+  overflow: visible;
+
   fill: none;
 
   stroke: var(--cream);
 
   stroke-width: 1.5;
-
   stroke-linecap: round;
-
   stroke-linejoin: round;
 
   opacity: 0.9;
@@ -306,19 +288,18 @@
 }
 
 .storeSvg .handwriting {
-  font-style: italic;
-
   font-size: 19px;
+
+  font-style: italic;
 }
 
-/* ================================
-   FOOTER
-================================ */
+/* FOOTER */
 
 .footerText {
-  margin: 17px 0 0;
+  margin: 16px 0 0;
 
   font-size: 9px;
+  font-weight: 400;
 
   letter-spacing: 0.32em;
 
@@ -326,18 +307,16 @@
 }
 
 .bottomSpace {
-  height: 48px;
+  height: 45px;
 }
 
-/* ========================================
-   TABLET
-======================================== */
+/* TABLET */
 
 @media (max-width: 768px) {
   .location {
     width: calc(100% - 48px);
 
-    padding-top: 28px;
+    padding-top: 27px;
 
     font-size: 11px;
 
@@ -349,18 +328,20 @@
   }
 
   .logoSection {
-    margin: 20px auto 24px;
+    margin: 10px auto 20px;
   }
 
   .logo {
-    width: 300px;
-    height: 300px;
+    width: 310px;
+    height: 310px;
 
     max-width: 72vw;
+
+    object-fit: cover;
   }
 
   .eyebrow {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 
     font-size: 10px;
 
@@ -378,7 +359,7 @@
   .description {
     max-width: 570px;
 
-    margin-top: 36px;
+    margin-top: 35px;
 
     padding: 0 10px;
 
@@ -388,7 +369,7 @@
   }
 
   .divider {
-    margin: 35px 0 27px;
+    margin: 34px 0 26px;
 
     gap: 16px;
   }
@@ -412,7 +393,7 @@
   .categories {
     gap: 9px;
 
-    margin-top: 30px;
+    margin-top: 29px;
   }
 
   .categories span {
@@ -426,19 +407,17 @@
   }
 
   .storeScene {
-    margin-top: 38px;
+    margin-top: 37px;
   }
 }
 
-/* ========================================
-   MOBILE
-======================================== */
+/* MOBILE */
 
 @media (max-width: 480px) {
   .location {
     width: calc(100% - 38px);
 
-    padding-top: 23px;
+    padding-top: 22px;
 
     font-size: 9px;
 
@@ -450,29 +429,41 @@
   }
 
   .logoSection {
-    margin: 13px auto 20px;
+    margin: 7px auto 17px;
   }
 
   .logo {
-    width: 245px;
-    height: 245px;
+    width: 260px;
+    height: 260px;
 
     max-width: 72vw;
 
     object-fit: cover;
+
+    margin: 0 auto;
+
+    border: none !important;
+    outline: none !important;
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
   }
 
   .eyebrow {
     max-width: 350px;
 
-    margin-bottom: 22px;
+    margin-bottom: 21px;
 
     font-size: 8.5px;
+
+    line-height: 1.7;
 
     letter-spacing: 0.25em;
   }
 
   .heading {
+    width: 100%;
+
     font-size: clamp(47px, 15vw, 65px);
 
     line-height: 0.84;
@@ -487,7 +478,7 @@
   .description {
     max-width: 355px;
 
-    margin-top: 30px;
+    margin-top: 29px;
 
     padding: 0 4px;
 
@@ -497,7 +488,7 @@
   }
 
   .divider {
-    margin: 30px 0 24px;
+    margin: 29px 0 23px;
 
     gap: 14px;
   }
@@ -519,11 +510,11 @@
   }
 
   .categories {
-    gap: 7px;
-
     width: 100%;
 
-    margin-top: 26px;
+    gap: 8px;
+
+    margin-top: 25px;
   }
 
   .categories span {
@@ -539,7 +530,7 @@
   .storeScene {
     width: 108%;
 
-    margin-top: 33px;
+    margin-top: 32px;
   }
 
   .storeSvg {
@@ -559,14 +550,14 @@
   }
 }
 
-/* ========================================
-   SMALL PHONES
-======================================== */
+/* VERY SMALL PHONES */
 
 @media (max-width: 370px) {
   .logo {
-    width: 220px;
-    height: 220px;
+    width: 230px;
+    height: 230px;
+
+    max-width: 72vw;
   }
 
   .heading {

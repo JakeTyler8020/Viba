@@ -33,9 +33,9 @@ export default function ComingSoonPage() {
         </p>
 
         <div className={styles.divider}>
-          <span className={styles.line} />
+          <span className={styles.line}></span>
           <span className={styles.heart}>♡</span>
-          <span className={styles.line} />
+          <span className={styles.line}></span>
         </div>
 
         <p className={styles.tagline}>
@@ -67,15 +67,9 @@ export default function ComingSoonPage() {
             <circle cx="78" cy="69" r="3" />
 
             <rect x="125" y="174" width="95" height="96" rx="3" />
-            <text x="172" y="199" textAnchor="middle">
-              Good
-            </text>
-            <text x="172" y="220" textAnchor="middle">
-              Things
-            </text>
-            <text x="172" y="241" textAnchor="middle">
-              Ahead
-            </text>
+            <text x="172" y="199" textAnchor="middle">Good</text>
+            <text x="172" y="220" textAnchor="middle">Things</text>
+            <text x="172" y="241" textAnchor="middle">Ahead</text>
             <path d="M165 252 Q172 243 179 252 Q172 261 165 252" />
 
             <line x1="254" y1="233" x2="254" y2="270" />
@@ -107,9 +101,7 @@ export default function ComingSoonPage() {
             <path d="M570 113 Q580 126 590 113" />
 
             <rect x="387" y="124" width="93" height="25" rx="4" />
-            <text x="434" y="142" textAnchor="middle">
-              VIBA
-            </text>
+            <text x="434" y="142" textAnchor="middle">VIBA</text>
 
             <rect x="307" y="153" width="75" height="94" />
             <line x1="307" y1="215" x2="382" y2="215" />
@@ -158,7 +150,7 @@ export default function ComingSoonPage() {
           GOOD THINGS ARE ON THEIR WAY.
         </p>
 
-        <div className={styles.bottomSpace} />
+        <div className={styles.bottomSpace}></div>
       </section>
     </main>
   );
